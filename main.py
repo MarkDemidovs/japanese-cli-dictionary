@@ -1,6 +1,8 @@
-line: string = None
+cmd: string | None  = None
 
 while True:
-    line = input("Please enter a word in japanese or english.")
+    line = input("Please enter a word in japanese or english.").strip()
+    if len(line) > 0:
+        break
 
 print(line)
