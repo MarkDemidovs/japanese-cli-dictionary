@@ -2,11 +2,9 @@ from classifier import classify
 from dictionary import load_dictionary
 from lexicographer import lexicographer
 
-cmd: str | None  = None
-
 while True:
-    cmd = input("Please enter a word in japanese or english.").strip()
-    if len(cmd):
+    cmd: str = input("Please enter a word in japanese or english.").strip()
+    if cmd:
         break
 
 dictionary = load_dictionary()

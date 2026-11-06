@@ -1,6 +1,10 @@
 from classifier import Language
-def lexicographer(dictionary: list[dict[str, str]], word_type, cmd: str):
-    match = None
+
+
+def lexicographer(
+    dictionary: list[dict[str, str]], word_type: Language, cmd: str
+) -> None:
+    match: dict[str, str] | None = None
 
     for entry in dictionary:
         if word_type == Language.JAPANESE:
