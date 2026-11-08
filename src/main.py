@@ -3,7 +3,7 @@ from dictionary import load_dictionary
 from lexicographer import lexicographer
 
 while True:
-    cmd: str = input("Please enter a word in japanese or english.").strip()
+    cmd: str = input("Please enter a word in japanese or english:").strip()
     if cmd:
         break
 

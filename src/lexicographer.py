@@ -18,6 +18,10 @@ def lexicographer(
 
     if match is not None:
         if word_type == Language.JAPANESE:
-            print(match["Vocab-English"])
+            print(f"English word:{match["Vocab-English"]}")
+            print(f"Kana reading: {match["Vocab-Kana"]}")
+            print(f"Frequency: {match["vocab freq"]}; JLPT: {match["JLPT"]}")
         elif word_type == Language.ENGLISH:
-            print(match["Vocab-Japanese"])
+            print(f"Japanese word: {match["Vocab-Japanese"]} ")
+            print(f"Kana reading: {match["Vocab-Kana"]}")
+            print(f"Frequency: {match["vocab freq"]}; JLPT: {match["JLPT"]}")
